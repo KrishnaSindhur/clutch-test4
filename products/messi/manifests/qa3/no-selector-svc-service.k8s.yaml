@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: no-selector-svc
+  namespace: messi-qa3
+spec:
+  ports:
+    - name: tcp
+      port: 191
+      protocol: TCP
+      targetPort: 191
+  type: ClusterIP
